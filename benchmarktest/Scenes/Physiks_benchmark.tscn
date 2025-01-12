@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://wq65ml2ar44b"]
+[gd_scene load_steps=8 format=3 uid="uid://wq65ml2ar44b"]
 
-[ext_resource type="Script" path="res://Scripts/BallSpawner.gd" id="2_2r8aj"]
-[ext_resource type="PackedScene" uid="uid://bh1pk81hid6w5" path="res://Prefab/Ball.tscn" id="2_w2lsx"]
-[ext_resource type="PackedScene" uid="uid://v01gunwne171" path="res://Prefab/Box.tscn" id="2_wo2si"]
+[ext_resource type="Script" path="res://Scripts/Monitor_Physik.gd" id="1_q4qtx"]
+[ext_resource type="Script" path="res://Scripts/BallSpawner.gd" id="2_0uhls"]
+[ext_resource type="PackedScene" uid="uid://bh1pk81hid6w5" path="res://Prefab/Ball.tscn" id="3_mj1al"]
+[ext_resource type="PackedScene" uid="uid://v01gunwne171" path="res://Prefab/Box.tscn" id="4_2qvpg"]
 
 [sub_resource type="Environment" id="Environment_on3se"]
 
@@ -11,6 +12,7 @@
 [sub_resource type="Compositor" id="Compositor_a7otu"]
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_q4qtx")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 39.5642, 0)
@@ -25,10 +27,10 @@ transform = Transform3D(1, 0, 0, 0, 0.0298232, 0.999555, 0, -0.999555, 0.0298232
 
 [node name="BallSpawner" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.5251, 0)
-script = ExtResource("2_2r8aj")
-ball = ExtResource("2_w2lsx")
+script = ExtResource("2_0uhls")
+ball = ExtResource("3_mj1al")
 
-[node name="Box" parent="." instance=ExtResource("2_wo2si")]
+[node name="Box" parent="." instance=ExtResource("4_2qvpg")]
 
 [node name="BallSpawnTimer" type="Timer" parent="."]
 wait_time = 0.1
