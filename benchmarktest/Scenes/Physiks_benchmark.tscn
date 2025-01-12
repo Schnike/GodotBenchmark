@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Monitor_Physik.gd" id="1_q4qtx"]
 [ext_resource type="Script" path="res://Scripts/BallSpawner.gd" id="2_0uhls"]
-[ext_resource type="PackedScene" uid="uid://bh1pk81hid6w5" path="res://Prefab/Ball.tscn" id="3_mj1al"]
+[ext_resource type="PackedScene" uid="uid://bxgx8puh2mwfi" path="res://Prefab/Ball.tscn" id="3_mj1al"]
 [ext_resource type="PackedScene" uid="uid://v01gunwne171" path="res://Prefab/Box.tscn" id="4_2qvpg"]
 
 [sub_resource type="Environment" id="Environment_on3se"]
@@ -33,7 +33,7 @@ ball = ExtResource("3_mj1al")
 [node name="Box" parent="." instance=ExtResource("4_2qvpg")]
 
 [node name="BallSpawnTimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.006
 autostart = true
 
 [connection signal="timeout" from="BallSpawnTimer" to="BallSpawner" method="_on_ball_spawn_timer_timeout"]

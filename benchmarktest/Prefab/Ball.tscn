@@ -1,15 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bh1pk81hid6w5"]
+[gd_scene load_steps=3 format=3 uid="uid://bxgx8puh2mwfi"]
 
 [ext_resource type="PackedScene" uid="uid://bi08m73hn5hij" path="res://Assets/ball.fbx" id="1_f0nyi"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_4fyjo"]
-radius = 0.988099
+[sub_resource type="SphereShape3D" id="SphereShape3D_cgfj3"]
+radius = 0.990635
 
-[node name="Ball" type="Node3D"]
+[node name="Ball" type="RigidBody3D"]
 
 [node name="ball" parent="." instance=ExtResource("1_f0nyi")]
 
-[node name="RigidBody3D" type="RigidBody3D" parent="ball"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ball/RigidBody3D"]
-shape = SubResource("SphereShape3D_4fyjo")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_cgfj3")
