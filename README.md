@@ -38,10 +38,9 @@ Dieses Projekt ist ein **Physik- und Render-Benchmark**, das mit **Godot Engine 
 
 <ol>
   <li>Lade das Repository herunter oder klone es:
-    <pre><code>git clone https://github.com/&lt;dein-repo-name&gt;.git</code></pre>
+    <pre><code>git clone https://github.com/&lt;GodotBenchmark&gt;.git</code></pre>
   </li>
   <li>Öffne das Projekt mit Godot 4.3.</li>
-  <li>Starte die Szene <code>Main.tscn</code>, um den Benchmark auszuführen.</li>
 </ol>
 
 ## Nutzung
@@ -79,23 +78,6 @@ Dieses Projekt ist ein **Physik- und Render-Benchmark**, das mit **Godot Engine 
   <li><strong>Frame-Time:</strong> Zeit (in Millisekunden) für die Berechnung eines Frames. Werte über <strong>100 ms</strong> bedeuten, dass die Simulation zu langsam ist.</li>
   <li><strong>Objektanzahl:</strong> Zeigt, wie viele aktive Objekte (Kugeln, Blöcke) in der Szene existieren.</li>
   <li><strong>Speichernutzung:</strong> Bezieht sich auf den statischen Speicher und den genutzten Videospeicher.</li>
-</ul>
-
-## Ergebnisse speichern
-
-Alle relevanten Messwerte werden automatisch in die Datei <code>user://performance_log.txt</code> geschrieben. Diese Datei ist im Export-Build verfügbar und kann zur Analyse der Testergebnisse verwendet werden.
-
-## Anpassungsmöglichkeiten
-
-<ul>
-  <li>Die Parameter für die Tests, wie z. B. <strong>Startgröße des Gitters</strong>, <strong>Abstände</strong> und <strong>Kamerawinkel</strong>, können in den Skripten über <strong>Export-Variablen</strong> geändert werden. Diese Einstellungen sind direkt im Godot-Editor zugänglich.</li>
-</ul>
-
-## Hinweise
-
-<ul>
-  <li>Das Projekt wurde für Benchmarks auf Desktop-Systemen optimiert. Mobile Geräte könnten abweichende Ergebnisse liefern.</li>
-  <li>Es wird empfohlen, das Projekt als <strong>Windows-Export</strong> auszuführen, um die Hardware unter realistischen Bedingungen zu testen.</li>
 </ul>
 
 ---
