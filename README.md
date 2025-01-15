@@ -73,7 +73,9 @@ Dieses Projekt ist ein **Physik- und Render-Benchmark**, das mit **Godot Engine 
 
 <ul>
   <li><strong>FPS (Frames per Second):</strong> Gibt an, wie flüssig die Simulation läuft. Werte unter <strong>10 FPS</strong> deuten auf Leistungsengpässe hin.</li>
-  <li><strong>Objektanzahl:</strong> Zeigt, wie viele aktive Objekte (Kugeln, Blöcke) in der Szene existieren.</li>
+  <li><strong>Object Count:</strong> Zeigt, wie viele aktive Nodes (Kugeln, Blöcke) in der Szene existieren.</li>
+  <li><strong>Active 3D Physics Objects:</strong> Zeigt, wie viele aktive Objecte mir Riggidbody (Kugeln) in der Szene existieren.</li>
+  <li><strong>Total Objects in Frame:</strong> Zeigt, wie viele aktive Nodes (Kugeln, Blöcke) in der Szene gerendert werden</li>
 </ul>
 
 ---
