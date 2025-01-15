@@ -43,6 +43,16 @@ Dieses Projekt ist ein **Physik- und Render-Benchmark**, das mit **Godot Engine 
 
 ## Nutzung
 
+### Bechmarks starten
+<ol>
+  <li>Öffne den Ordner "Scenes" und wähle einen der beiden Benchmarks aus.</li>
+  <li></li>
+  <li>Um denn Benchmark zu starten betätige den "Run current scene" Knopf.</li>
+  <li></li>
+  <li>Um denn Benchmark danach wieder zu schließen betätige den "Stop running Project" Knopf.</li>
+  <li></li>
+</ol>
+
 ### Physik-Benchmark (Becken-Füllung)
 
 <ol>
