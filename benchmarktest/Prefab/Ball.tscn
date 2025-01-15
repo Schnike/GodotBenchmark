@@ -11,3 +11,5 @@ radius = 0.990635
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_cgfj3")
+
+[editable path="ball"]
