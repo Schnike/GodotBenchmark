@@ -37,6 +37,12 @@ func _process(delta):
 	# Rotate the camera around the origin
 	current_angle += rotation_speed * delta
 	_update_camera_position()
+	var fps = Performance.get_monitor(Performance.TIME_FPS)
+	if fps < 10:
+		print("FPS below 10, returning to main menu...")
+		get_tree().change_scene_to_file("res://Scenes/main.tscn")
+	if Input.is_action_just_pressed("toMainMenu"):
+		get_tree().change_scene_to_file("res://Scenes/main.tscn")
 
 func _update_camera_position():
 	var rad = deg_to_rad(current_angle)  # Corrected function name

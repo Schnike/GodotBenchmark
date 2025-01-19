@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbw2phjefna7q"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_8xcj4"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_8xcj4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+
+[node name="Button" type="Button" parent="CanvasGroup"]
+offset_left = -74.0
+offset_top = -26.0
+offset_right = 85.0
+offset_bottom = 17.0
+text = "Physiks Benchmark"
+
+[node name="Button2" type="Button" parent="CanvasGroup"]
+offset_left = -76.0
+offset_top = 27.0
+offset_right = 81.0
+offset_bottom = 70.0
+text = "Render Benchmark"
+
+[connection signal="pressed" from="CanvasGroup/Button" to="." method="_on_button_pressed_pb"]
+[connection signal="pressed" from="CanvasGroup/Button2" to="." method="_on_button_2_pressed_rb"]
