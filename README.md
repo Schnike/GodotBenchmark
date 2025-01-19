@@ -37,6 +37,7 @@ Dieses Projekt ist ein **Physik- und Render-Benchmark**, das mit **Godot Engine 
 ## Installation
 
 <ol>
+  <li>Godot downloaden (https://godotengine.org)</li>
   <li>Lade das Repository herunter oder klone es.</li>
   <li>Öffne das Projekt mit Godot 4.3.</li>
 </ol>
